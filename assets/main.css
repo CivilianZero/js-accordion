@@ -1,0 +1,42 @@
+*, *:after, *:before {
+	box-sizing: border-box
+}
+
+div.accordian {
+	width: 40%;
+	margin: 0 auto;
+	background-color: dodgerblue;
+	border: 2px black solid;
+	color: white;
+	font-family: sans-serif;
+}
+
+div.panel {
+	opacity: 0;
+	transition: 0.5s ease-in-out;
+	max-height: 0;
+	overflow: hidden;
+}
+
+div.show {
+	opacity: 1;
+	max-height: 100px;
+}
+
+h1.active,
+h1:hover {
+	background-color: white;
+	color: black;
+}
+
+h1 {
+	margin: 0;
+	padding: 10px;
+	cursor: pointer;
+	border-bottom: 2px black solid;
+	transition: .5s
+}
+
+p {
+	padding: 10px;
+}
